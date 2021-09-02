@@ -58,10 +58,7 @@ const isBingo = () => {
 const screenshot = () => {
     html2canvas(document.querySelector("#capture")).then(canvas => {
         canvas.classList.add('screenshot-canvas');
-        //canvas.style.crossOrigin = "anonymous";
-        //window.open().document.write('<img src="' + canvas.toDataURL() + '" + "crossOrigin = "anonymous""; />');
         document.body.appendChild(canvas);
-        window.open('blob:null/canvas', "sumerbingo");
     });    
 }
 
