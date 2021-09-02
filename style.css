@@ -14,6 +14,14 @@ body {
     align-items: center;
 }
 
+.screenshot-button {
+  width: 100%;
+  border: solid lightskyblue;
+  font-size: inherit;
+  font-family: inherit;
+  font-style: inherit;
+}
+
 .main {
     display: flex;
     flex-flow: column nowrap;

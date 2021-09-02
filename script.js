@@ -1,5 +1,5 @@
 const grid = document.querySelector('.bingo-grid');
-const screenshotBtn = document.querySelector('.screenshot');
+const screenshotBtn = document.querySelector('.screenshot-button');
 
 const addMark = (evt) => {
     const card = evt.target.closest('.grid-item');
@@ -56,10 +56,13 @@ const isBingo = () => {
 }
 
 const screenshot = () => {
-    preventDefault();
     html2canvas(document.querySelector("#capture")).then(canvas => {
-        document.body.appendChild(canvas)
-    });
+        canvas.classList.add('screenshot-canvas');
+        //canvas.style.crossOrigin = "anonymous";
+        //window.open().document.write('<img src="' + canvas.toDataURL() + '" + "crossOrigin = "anonymous""; />');
+        document.body.appendChild(canvas);
+        window.open('blob:null/canvas', "sumerbingo");
+    });    
 }
 
 grid.addEventListener('click', addMark);
