@@ -3,6 +3,10 @@
 	  margin: 0;
 	  border: 0;
 	}
+p {
+  margin: 0;
+  padding: 3px;
+}
 
 body {
     display: flex;
@@ -13,16 +17,15 @@ body {
 .main {
     display: flex;
     flex-flow: column nowrap;
-    border: 1px solid #000;
-    border-radius: 18px;
-    /* justify-content: center; */
+    border: 2px solid #000;
+    border-radius: 10%;
     align-items: center;
     background-color: rgb(230, 223, 212);
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-style: normal;
     font-size: 1.6em;
-    width: 1100px;
-    height: 1100px;
+    width: 1000px;
+    height: 1000px;
   }
   
   .header {
@@ -41,15 +44,15 @@ body {
     display: grid;
     width: 800px;
     height: 800px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     row-gap: 3px;
     column-gap: 3px;
   }
 
   .bingo-grid__image {
-    width: 130px;
-    height: 130px;
+    width: 80%;
+    height: 80%;
     align-self: center;
   }
   
