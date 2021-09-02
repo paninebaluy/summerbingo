@@ -1,4 +1,6 @@
 const grid = document.querySelector('.bingo-grid');
+const screenshotBtn = document.querySelector('.screenshot');
+
 const addMark = (evt) => {
     const card = evt.target.closest('.grid-item');
     if (!card.classList.contains('grid-item__image')) {
@@ -55,5 +57,14 @@ const isBingo = () => {
     else setInitPicture();
 }
 
+const screenshot = () => {
+    preventDefault();
+    html2canvas(document.querySelector("#capture")).then(canvas => {
+        window.
+        document.body.appendChild(canvas)
+    });
+}
+
 grid.addEventListener('click', addMark);
 grid.addEventListener('click', isBingo);
+screenshotBtn.addEventListener('click', screenshot);

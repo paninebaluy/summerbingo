@@ -9,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
   </head>
   <body>
-    <section class="main">
+    <section class="main" id="capture">
       <h1 class="header">Бинго лета-2021</h1>
       <h2 class="header_type_sub">(если вам за тридцать)</h2>
       <article class="bingo-grid">
@@ -43,6 +44,9 @@
       </article>
     </section>
     <footer class="bingo-footer">
+      <form>
+        <button class="screenshot">Сделать скриншот</button>
+      </form>
       <ul class="bingo-footer__list">
         <li>
           <p>Как сделать скриншот:</p>
@@ -58,7 +62,6 @@
         </li>
       </ul>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>

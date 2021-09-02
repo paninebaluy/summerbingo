@@ -62,7 +62,7 @@ body {
     justify-content: center;
     background: inherit;
     border: 1px solid #000;
-    border-radius: 18px;
+    border-radius: 20%;
     text-align: center;
   }
   
@@ -85,4 +85,89 @@ body {
 
   .marked {
     background-color: palevioletred;
+  }
+
+  /* phones */
+  @media screen and (max-device-width: 768px) {
+    .main {
+      font-size: 0.6em;
+      width: 320px;
+      height: 390px;
+      border: 1px solid #000;
+    }
+    
+    .header {
+      font-size: 1em;
+      padding: 10px 0 5px 0;
+    }
+  
+    .header_type_sub {
+      font-size: 0.9em;
+      padding: 0 0 10px 0;
+    }
+    
+    .bingo-grid {
+      width: 315px;
+      height: 315px;
+      row-gap: 1px;
+      column-gap: 1px;
+    }
+  
+    .bingo-grid__image {
+      width: 80%;
+      height: 80%;
+      align-self: center;
+    }
+    
+    .grid-item {
+      border: 1px solid #000;
+    }
+    
+    .bingo-footer {
+      font-size: 0.6em;
+      padding: 5px;
+    }
+  }
+
+  /* tablets */
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .main {
+      font-size: 0.9em;
+      width: 768px;
+      height: 910px;
+      border: 1px solid #000;
+    }
+    
+    .header {
+      font-size: 1.3em;
+      padding: 20px 0 10px 0;
+    }
+  
+    .header_type_sub {
+      font-size: 1.2em;
+      padding: 0 0 20px 0;
+    }
+    
+    .bingo-grid {
+      width: 760px;
+      height: 760px;
+      row-gap: 2px;
+      column-gap: 2px;
+    }
+  
+    .bingo-grid__image {
+      width: 80%;
+      height: 80%;
+      align-self: center;
+    }
+    
+    .grid-item {
+      border: 1px solid #000;
+    }
+    
+    .bingo-footer {
+      font-size: 0.9em;
+      padding: 5px;
+    }
   }
