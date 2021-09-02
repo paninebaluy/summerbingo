@@ -13,8 +13,6 @@ const setWinPicture = () => {
     image.src = ('./bingo-success.png');
     image.style.height = '100%';
     image.style.width = '100%';
-    image.style.overflow = 'hidden';
-    image.style.borderRadius = "18px";
     image.style.transition = '0.5s ease-out';
 }
 
@@ -60,7 +58,6 @@ const isBingo = () => {
 const screenshot = () => {
     preventDefault();
     html2canvas(document.querySelector("#capture")).then(canvas => {
-        window.
         document.body.appendChild(canvas)
     });
 }

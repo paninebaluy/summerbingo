@@ -54,6 +54,7 @@ body {
     width: 80%;
     height: 80%;
     align-self: center;
+    object-fit: cover;
   }
   
   .grid-item {
@@ -64,6 +65,7 @@ body {
     border: 1px solid #000;
     border-radius: 20%;
     text-align: center;
+    overflow: hidden;
   }
   
   .bingo-footer {
