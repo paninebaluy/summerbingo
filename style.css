@@ -65,7 +65,7 @@ body {
     object-fit: cover;
   }
   
-  .grid-item:not(.grid-item__image) {
+  .grid-item {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -74,6 +74,9 @@ body {
     border-radius: 20%;
     text-align: center;
     overflow: hidden;
+  }
+
+  .grid-item:not(.grid-item__image) {
     cursor: pointer;
   }
   
