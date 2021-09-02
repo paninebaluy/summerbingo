@@ -65,7 +65,7 @@ body {
     object-fit: cover;
   }
   
-  .grid-item {
+  .grid-item:not(.grid-item__image) {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
